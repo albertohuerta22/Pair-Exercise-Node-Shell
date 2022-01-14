@@ -1,4 +1,4 @@
-
+const { cwd } = require('process');
 
 process.stdout.write('prompt > ');
 
@@ -9,7 +9,7 @@ process.stdin.on('data', (data) =>{
   process.stdout.write('\npromp > ');
 });
 
-import { cwd } from 'process';
+
 
 console.log(`Current directory: ${cwd()}`);
 
