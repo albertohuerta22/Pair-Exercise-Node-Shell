@@ -1,16 +1,10 @@
 const { cwd } = require('process');
+const fs = require('fs');
 
-process.stdout.write('prompt > ');
-
-process.stdin.on('data', (data) =>{
-  const cmd = data.toString().trim();
-
-  process.stdout.write('You typed: ' + cmd);
-  process.stdout.write('\npromp > ');
-});
-
-
+const pwd = require('./pwd');
+const ls = require('./ls');
+const { fstat } = require('fs');
 
 console.log(`Current directory: ${cwd()}`);
+fs.readdir()
 
-// console.log();
